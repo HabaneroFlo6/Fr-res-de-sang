@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Frères de sang</title>
+
+    <script>
+        function zeigeUhrzeit() {
+          var jetzt = new Date();
+          var stunden = jetzt.getHours();
+          var minuten = jetzt.getMinutes();
+          
+          // Füge eine führende Null hinzu, wenn die Minutenzahl einstellig ist
+          if (minuten < 10) {
+            minuten = "0" + minuten;
+          }
+          
+          // Zeige die Uhrzeit im Format HH:MM an
+          document.getElementById('uhrzeit').innerHTML = stunden + ":" + minuten;
+        }
+    
+        // Aktualisiere die Uhrzeit alle Sekunde
+        setInterval(zeigeUhrzeit, 1000);
+      </script>
+
+</head>
+<body>
+
+    <!-- Blue Menu at the Top -->
+    <!-- #region -->
+    <nav class="nav_nav">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i>
+                <img class="menu_img" src="img/menu.png" alt="">
+            </i>
+        </label>
+        <label class="logo">Frères de sang</label>
+
+        <ul id="navul" class="nav_ul">
+            <li class="nav_li"><a class= "nav_a_active" href="general.html">Général</a></li>
+            <li class="nav_li"><a class= "nav_a" href="resume.html">Résumé des chapitres</a></li>
+            <li class="nav_li"><a class= "nav_a" href="personnes.html">Personnes</a></li>
+        </ul>
+    </nav>
+
+    <!-- #endregion -->
+
+
+
+
+<div id="section_two">
+
+
+
+    <h1 class="header1">Généralités sur le livre:</h1>
+
+    <div>  
+        <ul class="frankfurt_start">    
+            « Frères de sang », de Mikaël Ollivier en 2003, raconte l'histoire 
+            de Brice et de son jeune frère Martin. Brice est accusé à tort 
+            de cinq meurtres et se retrouve en prison. Son petit frère Martin 
+            est déterminé à prouver l'innocence de Brice et à le faire 
+            sortir de prison même si toutes les preuves s'y opposent.
+        </ul>
+
+
+        <!-- Images and Text to them -->
+        <!-- #region -->
+        <div class="vorschau_bilder_div_container_all">
+        <div class="vorschau_bilder_div">
+            
+            <div class="container_vorschau_bilder_img_one">
+                <img class="vorschau_bilder_img_one" src="img/vorschau.jpeg" alt="">
+                <div class="text_container_vorschau_bilder_img_div_one">
+                    <p class="text_container_vorschau_bilder_img_one">Photo de couverture</p>
+                </div>
+            </div>
+
+            <div class="container_vorschau_bilder_img_two">
+                <img class="vorschau_bilder_img_two" src="img/vorschau_2.jpeg" alt="">
+                <div class="text_container_vorschau_bilder_img_div_two">
+                    <p class="text_container_vorschau_bilder_img_two">Photo de couverture 2</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="vorschau_bilder_text_div">
+            <ul class="vorschau_bilder_ul">
+                Il s'agit de deux couvertures différentes du 
+                livre. L'image de couverture supérieure se trouve sur 
+                Amazon et l'image de couverture inférieure est en vente avec 
+                le livre sur le site de Klett. Il y a d'autres couvertures 
+                de ce livre, ce ne sont que deux exemples.
+            </ul>
+        </div>
+        </div>
+        
+        <!-- #endregion -->
+
+        
+    </div>
+
+</div>
+
+
+        <h1 class="header1" style="margin-top: -1%;">Résumé du livre</h1>
+
+        <ul class="zusammenfassung_buch_absatz_text" style="margin-top: 48px; margin-bottom: 40px;">
+            Au début, tout va bien dans cette famille idéale. Puis très 
+            vite, tout va mal. Mais alors vraiment très mal. Pire que tout 
+            ce que vous pouvez imaginer. Quand vous avez 14 ans, que votre 
+            frère aîné est accusé de meurtre, que toutes les preuves 
+            l'accablent, que même chez vos parents le doute s'immisce... Vous 
+            faites quoi ? Soit vous criez avec les loups, soit vous 
+            refusez l'évidence. Et vous restez fidèle à votre pacte de Frères de sang.
+        </ul>
+        <ul class="zusammenfassung_buch_absatz_text" style="margin-top: 48px; margin-bottom: 40px;">
+            Un flip énorme, un suspense hallucinant, une histoire de fratrie qui vous noue les tripes.
+        </ul>
+        
+    </div>
+
+<!-- #endregion -->
+
+    
+</body>
+</html>
