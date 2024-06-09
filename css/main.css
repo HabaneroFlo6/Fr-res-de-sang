@@ -35,6 +35,25 @@ label.logo{
     padding: 0 100px;
     font-weight: bold;
 }
+@media (max-width: 527px){
+    label.logo{
+        color: white;
+        font-size: 35px;
+        line-height: 80px;
+        padding: 0 100px;
+        font-weight: bold;
+    }
+}
+@media (max-width: 526px){
+    label.logo{
+        color: white;
+        font-size: 35px;
+        line-height: 80px;
+        padding: 0 100px;
+        font-weight: bold;
+        margin-left: -90px;
+    }
+}
 
 nav ul.nav_ul{
     float: right;
